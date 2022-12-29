@@ -1,9 +1,9 @@
 /**
 * @file modAlphaCipher.h
-* @author Шепталин В.С.
+* @author Участкин И.А.
 * @version 1.0
 * @brief Описание класса modAlphaCipher
-* @date 22.12.2022
+* @date 29.12.2022
 * @copyright ИБСТ ПГУ
 */
 
