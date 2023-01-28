@@ -1,0 +1,22 @@
+\begin{theindex}
+
+  \item {cipher\_error}, \hyperpage{7}
+
+  \indexspace
+
+  \item {decrypt}
+    \subitem {Encryptor}, \hyperpage{8}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {Encryptor}, \hyperpage{9}
+  \item {Encryptor}, \hyperpage{8}
+    \subitem {decrypt}, \hyperpage{8}
+    \subitem {encrypt}, \hyperpage{9}
+
+  \indexspace
+
+  \item {main.cpp}, \hyperpage{11}
+
+\end{theindex}

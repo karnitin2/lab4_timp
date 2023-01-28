@@ -1,0 +1,84 @@
+\hypertarget{classEncryptor}{}\doxysection{Класс Encryptor}
+\label{classEncryptor}\index{Encryptor@{Encryptor}}
+
+
+Шифрование методом маршрутной перестановки  
+
+
+
+
+{\ttfamily \#include $<$Encryptor.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classEncryptor_a339422fc70a63bee781566d81eed9827}{encrypt}} (string in, const int key)
+\begin{DoxyCompactList}\small\item\em Зашифровывание \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classEncryptor_a9137d9f1835002b5252f30fde32d8215}{decrypt}} (string in, const int key)
+\begin{DoxyCompactList}\small\item\em Зашифровывание \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Шифрование методом маршрутной перестановки 
+
+Ключ передается как аргумент в методах encrypt и decrypt. Для зашифровывания предназначен -\/ encrypt, для расшифровывания -\/ decrypt. \begin{DoxyWarning}{Предупреждения}
+Реализация только для английского языка 
+\end{DoxyWarning}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classEncryptor_a9137d9f1835002b5252f30fde32d8215}\label{classEncryptor_a9137d9f1835002b5252f30fde32d8215}} 
+\index{Encryptor@{Encryptor}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Encryptor@{Encryptor}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily string Encryptor\+::decrypt (\begin{DoxyParamCaption}\item[{string}]{in,  }\item[{const int}]{key }\end{DoxyParamCaption})}
+
+
+
+Зашифровывание 
+
+Расшифровывание
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em in} & Открытый текст. Не должен быть пустой строкой. \\
+\hline
+\mbox{\texttt{ in}}  & {\em key} & Ключ. Состоит из цифр. Не должен быть меньше 1. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}},если} & текст пустой или текст содержит неправильне символы или ключ меньше 1. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classEncryptor_a339422fc70a63bee781566d81eed9827}\label{classEncryptor_a339422fc70a63bee781566d81eed9827}} 
+\index{Encryptor@{Encryptor}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Encryptor@{Encryptor}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily string Encryptor\+::encrypt (\begin{DoxyParamCaption}\item[{string}]{in,  }\item[{const int}]{key }\end{DoxyParamCaption})}
+
+
+
+Зашифровывание 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em in} & Открытый текст. Не должен быть пустой строкой. При наличии неправильных символов выдает исключение. \\
+\hline
+\mbox{\texttt{ in}}  & {\em key} & Ключ. Состоит из цифр. Не должен быть меньше 1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованная строка 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}},если} & текст пустой или текст содержит неправильне символы \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Encryptor.\+h\item 
+Encryptor.\+cpp\end{DoxyCompactItemize}
