@@ -1,0 +1,88 @@
+\hypertarget{classCipher}{}\doxysection{Класс Cipher}
+\label{classCipher}\index{Cipher@{Cipher}}
+
+
+Шифрование методом маршрутной перестановки  
+
+
+
+
+{\ttfamily \#include $<$Cipher.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCipher_a7c2ff5bca9685260d161fd73046d0fa8}\label{classCipher_a7c2ff5bca9685260d161fd73046d0fa8}} 
+int \mbox{\hyperlink{classCipher_a7c2ff5bca9685260d161fd73046d0fa8}{key}} ()
+\begin{DoxyCompactList}\small\item\em Ключ \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCipher_a1f95fa5f03da13238cc49d1c61270229}{cipher}} (string str, const int \mbox{\hyperlink{classCipher_a7c2ff5bca9685260d161fd73046d0fa8}{key}})
+\begin{DoxyCompactList}\small\item\em Зашифрование \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCipher_ab8b2c695ea8ab3acb124720042529883}{decipher}} (string str, const int \mbox{\hyperlink{classCipher_a7c2ff5bca9685260d161fd73046d0fa8}{key}})
+\begin{DoxyCompactList}\small\item\em Расшифрование \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Шифрование методом маршрутной перестановки 
+
+Ключ передается как аргумент в методах cipher и decipher. Для зашифрования и расшифрования предназначены методы cipher и decipher соответственно. \begin{DoxyWarning}{Предупреждения}
+Реализация только для английского языка 
+\end{DoxyWarning}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classCipher_a1f95fa5f03da13238cc49d1c61270229}\label{classCipher_a1f95fa5f03da13238cc49d1c61270229}} 
+\index{Cipher@{Cipher}!cipher@{cipher}}
+\index{cipher@{cipher}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{cipher()}{cipher()}}
+{\footnotesize\ttfamily string Cipher\+::cipher (\begin{DoxyParamCaption}\item[{string}]{str,  }\item[{const int}]{key }\end{DoxyParamCaption})}
+
+
+
+Зашифрование 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em str} & Открытый текст. \\
+\hline
+\mbox{\texttt{ in}}  & {\em key} & Целочисленный ключ. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованная строка 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}},если} & пустой текст или ключ, ключ меньше 1 \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classCipher_ab8b2c695ea8ab3acb124720042529883}\label{classCipher_ab8b2c695ea8ab3acb124720042529883}} 
+\index{Cipher@{Cipher}!decipher@{decipher}}
+\index{decipher@{decipher}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{decipher()}{decipher()}}
+{\footnotesize\ttfamily string Cipher\+::decipher (\begin{DoxyParamCaption}\item[{string}]{str,  }\item[{const int}]{key }\end{DoxyParamCaption})}
+
+
+
+Расшифрование 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em str} & Открытый текст. \\
+\hline
+\mbox{\texttt{ in}}  & {\em key} & Целочисленный ключ. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованная строка 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}},если} & пустой текст или ключ, ключ меньше 1 \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Cipher_8h}{Cipher.\+h}}\item 
+Cipher.\+cpp\end{DoxyCompactItemize}
